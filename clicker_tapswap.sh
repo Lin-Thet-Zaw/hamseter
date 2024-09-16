@@ -68,19 +68,19 @@ capacity=${capacity:-5000}
 
 while true; do
     Taps=$(curl -s -X POST \
-        https://api.tapswap.club/api/player/submit_taps \
+        https://api.hamsterkombatgame.io/clicker/sync \
         -H "Content-Type: application/json" \
         -H "Authorization: $Authorization" \
-        -d '{}' | jq -r '.playser.stat.taps')
+        -d '{}' | jq -r '.clickerUser.availableTaps')
 
     if [ "$Taps" -lt 30 ]; then
         echo "Taps are less than 30. Waiting to reach $capacity again..."
         while [ "$Taps" -lt $capacity ]; do
             Taps=$(curl -s -X POST \
-                https://api.tapswap.club/api/player/submit_taps \
+                https://api.hamsterkombatgame.io/clicker/sync \
                 -H "Content-Type: application/json" \
                 -H "Authorization: $Authorization" \
-                -d '{}' | jq -r '.player.stat.taps')
+                -d '{}' | jq -r '.clickerUser.availableTaps')
             sleep 5
         done
         continue
@@ -89,7 +89,7 @@ while true; do
     random_sleep=$(shuf -i 20-60 -n 1)
     sleep $(echo "scale=3; $random_sleep / 1000" | bc)
 
-    curl -s -X POST https://api.tapswap.club/api/player/submit_taps \
+    curl -s -X POST https://api.hamsterkombatgame.io/clicker/tap \
         -H "Content-Type: application/json" \
         -H "Authorization: $Authorization" \
         -d '{
