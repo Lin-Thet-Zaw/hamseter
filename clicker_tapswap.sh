@@ -9,22 +9,6 @@ cyan='\033[0;36m'
 blue='\033[0;34m'
 rest='\033[0m'
 
-# Predefined passcode
-passcode="1234"  # Change this to your desired passcode
-
-# Prompt for the passcode
-echo -en "${green}Enter Passcode to run the script: ${rest}"
-read -s entered_passcode
-echo ""
-
-# Check if the passcode matches
-if [ "$entered_passcode" != "$passcode" ]; then
-    echo -e "${red}Incorrect passcode. Exiting...${rest}"
-    exit 1
-fi
-
-echo -e "${green}Passcode accepted. Proceeding...${rest}"
-
 # If running in Termux, update and upgrade
 if [ -d "$HOME/.termux" ] && [ -z "$(command -v jq)" ]; then
     echo "Running update & upgrade ..."
@@ -84,19 +68,19 @@ capacity=${capacity:-5000}
 
 while true; do
     Taps=$(curl -s -X POST \
-        https://api.tapswap.club/api/player/submit_taps \
+        https://api.hamsterkombatgame.io/clicker/sync \
         -H "Content-Type: application/json" \
         -H "Authorization: $Authorization" \
-        -d '{}' | jq -r '.player.stat.taps')
+        -d '{}' | jq -r '.clickerUser.availableTaps')
 
     if [ "$Taps" -lt 30 ]; then
         echo "Taps are less than 30. Waiting to reach $capacity again..."
         while [ "$Taps" -lt $capacity ]; do
             Taps=$(curl -s -X POST \
-                https://api.tapswap.club/api/player/submit_taps \
+                https://api.hamsterkombatgame.io/clicker/sync \
                 -H "Content-Type: application/json" \
                 -H "Authorization: $Authorization" \
-                -d '{}' | jq -r '.player.stat.taps')
+                -d '{}' | jq -r '.clickerUser.availableTaps')
             sleep 5
         done
         continue
@@ -105,7 +89,7 @@ while true; do
     random_sleep=$(shuf -i 20-60 -n 1)
     sleep $(echo "scale=3; $random_sleep / 1000" | bc)
 
-    curl -s -X POST https://api.tapswap.club/api/player/submit_taps \
+    curl -s -X POST https://api.hamsterkombatgame.io/clicker/tap \
         -H "Content-Type: application/json" \
         -H "Authorization: $Authorization" \
         -d '{
