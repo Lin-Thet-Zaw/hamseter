@@ -8,7 +8,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/Ptechgithub/Hamster-Auto-buy
 ```
 ## Get keys 🔑 and send to your telegram channel
 ```
-bash <(curl -fsSL https://raw.githubusercontent.com/Ptechgithub/Hamster-Auto-buy-BestCard/main/ham_keys.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/Lin-Thet-Zaw/hamseter/blob/master/ham_keys.sh)
 ```
 
 ## Daily cipher:
