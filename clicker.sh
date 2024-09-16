@@ -67,11 +67,20 @@ capacity=${capacity:-5000}
 
 
 while true; do
-    Taps=$(curl -s -X POST \
+    response=$(curl -s -X POST \
         https://api.tapswap.club/api/account/challenge \
         -H "Content-Type: application/json" \
         -H "Authorization: $Authorization" \
-        -d '{}' | jq -r '.player.stat.taps')
+        -d '{}')
+
+    echo "Response: $response"  # Debugging step
+
+    Taps=$(echo "$response" | jq -r '.player.stat.taps')
+
+    if [[ ! "$Taps" =~ ^[0-9]+$ ]]; then
+        echo "Invalid Taps value: $Taps. Setting Taps to 0."
+        Taps=0
+    fi
 
     if [ "$Taps" -lt 30 ]; then
         echo "Taps are less than 30. Waiting to reach $capacity again..."
@@ -81,6 +90,10 @@ while true; do
                 -H "Content-Type: application/json" \
                 -H "Authorization: $Authorization" \
                 -d '{}' | jq -r '.player.stat.taps')
+
+            if [[ ! "$Taps" =~ ^[0-9]+$ ]]; then
+                Taps=0
+            fi
             sleep 5
         done
         continue
@@ -94,10 +107,9 @@ while true; do
         -H "Authorization: $Authorization" \
         -d '{
             "taps": '"$Taps"',
-            "taps": 3,
+            "count": 3,
             "timestamp": '"$(date +%s)"'
         }' > /dev/null
 
     echo "Taps left: $Taps"
 done
-
