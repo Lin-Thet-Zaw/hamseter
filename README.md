@@ -2,24 +2,24 @@
 
 ## Auto buy
 ```
-bash <(curl -fsSL https://raw.githubusercontent.com/Lin-Thet-Zaw/hamseter/blob/master/install.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/Lin-Thet-Zaw/hamseter/master/install.sh)
 ```
 ## Get keys 🔑 and send to your telegram channel
 ```
-bash <(curl -fsSL https://raw.githubusercontent.com/Lin-Thet-Zaw/hamseter/blob/master/ham_keys.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/Lin-Thet-Zaw/hamseter/master/ham_keys.sh)
 ```
 
 ## Daily cipher:
 ```
-bash <(curl -fsSL https://raw.githubusercontent.com/Lin-Thet-Zaw/hamseter/blob/master/daily_cipher.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/Lin-Thet-Zaw/hamseter/master/daily_cipher.sh)
 ```
 ### More advanced Auto buy
 ```
-bash <(curl -fsSL https://raw.githubusercontent.com/Lin-Thet-Zaw/hamseter/blob/master/install_second.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/Lin-Thet-Zaw/hamseter/master/install_second.sh)
 ```
 ### Auto Clicker
 ```
-bash <(curl -fsSL https://raw.githubusercontent.com/Lin-Thet-Zaw/hamseter/blob/master/clicker.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/Lin-Thet-Zaw/hamseter/master/clicker.sh)
 ```
 ![29](https://raw.githubusercontent.com/Ptechgithub/configs/main/media/29.jpg)
 ---
