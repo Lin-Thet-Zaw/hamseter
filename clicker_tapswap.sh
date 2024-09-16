@@ -71,7 +71,7 @@ while true; do
         https://api.tapswap.club/api/player/submit_taps \
         -H "Content-Type: application/json" \
         -H "Authorization: $Authorization" \
-        -d '{}' | jq -r '.player.stat.taps')
+        -d '{}' | jq -r '.playser.stat.taps')
 
     if [ "$Taps" -lt 30 ]; then
         echo "Taps are less than 30. Waiting to reach $capacity again..."
