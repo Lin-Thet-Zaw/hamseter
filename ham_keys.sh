@@ -45,53 +45,56 @@ PROXY_FILE="proxy.txt"
 
 # Games
 declare -A games
-games[1, name]="Zoopolis"
-games[1, appToken]="b2436c89-e0aa-4aed-8046-9b0515e1c46b"
-games[1, promoId]="b2436c89-e0aa-4aed-8046-9b0515e1c46b"
 
-games[2, name]="Chain Cube 2048"
-games[2, appToken]="d1690a07-3780-4068-810f-9b5bbf2931b2"
-games[2, promoId]="b4170868-cef0-424f-8eb9-be0622e8e8e3"
+games[1, name]="Twerk Race 3D"
+games[1, appToken]="61308365-9d16-4040-8bb0-2f4a4c69074c"
+games[1, promoId]="61308365-9d16-4040-8bb0-2f4a4c69074c"
 
-games[3, name]="Train Miner"
-games[3, appToken]="82647f43-3f87-402d-88dd-09a90025313f"
-games[3, promoId]="c4480ac7-e178-4973-8061-9ed5b2e17954"
+games[2, name]="Polysphere"
+games[2, appToken]="2aaf5aee-2cbc-47ec-8a3f-0962cc14bc71"
+games[2, promoId]="2aaf5aee-2cbc-47ec-8a3f-0962cc14bc71"
 
-games[4, name]="Merge Away"
-games[4, appToken]="8d1cc2ad-e097-4b86-90ef-7a27e19fb833"
-games[4, promoId]="dc128d28-c45b-411c-98ff-ac7726fbaea4"
+games[3, name]="Mow and Trim"
+games[3, appToken]="ef319a80-949a-492e-8ee0-424fb5fc20a6"
+games[3, promoId]="ef319a80-949a-492e-8ee0-424fb5fc20a6"
 
-games[5, name]="Twerk Race 3D"
-games[5, appToken]="61308365-9d16-4040-8bb0-2f4a4c69074c"
-games[5, promoId]="61308365-9d16-4040-8bb0-2f4a4c69074c"
+games[4, name]="Fluff Crusade"
+games[4, appToken]="112887b0-a8af-4eb2-ac63-d82df78283d9"
+games[4, promoId]="112887b0-a8af-4eb2-ac63-d82df78283d9"
 
-games[6, name]="Polysphere"
-games[6, appToken]="2aaf5aee-2cbc-47ec-8a3f-0962cc14bc71"
-games[6, promoId]="2aaf5aee-2cbc-47ec-8a3f-0962cc14bc71"
+games[5, name]="Tile Trio"
+games[5, appToken]="e68b39d2-4880-4a31-b3aa-0393e7df10c7"
+games[5, promoId]="e68b39d2-4880-4a31-b3aa-0393e7df10c7"
 
-games[7, name]="Mow and Trim"
-games[7, appToken]="ef319a80-949a-492e-8ee0-424fb5fc20a6"
-games[7, promoId]="ef319a80-949a-492e-8ee0-424fb5fc20a6"
+games[6, name]="Stone Age"
+games[6, appToken]="04ebd6de-69b7-43d1-9c4b-04a6ca3305af"
+games[6, promoId]="04ebd6de-69b7-43d1-9c4b-04a6ca3305af"
 
-games[8, name]="Fluff Crusade"
-games[8, appToken]="112887b0-a8af-4eb2-ac63-d82df78283d9"
-games[8, promoId]="112887b0-a8af-4eb2-ac63-d82df78283d9"
+games[7, name]="Bouncemasters"
+games[7, appToken]="bc72d3b9-8e91-4884-9c33-f72482f0db37"
+games[7, promoId]="bc72d3b9-8e91-4884-9c33-f72482f0db37"
 
-games[9, name]="Tile Trio"
-games[9, appToken]="e68b39d2-4880-4a31-b3aa-0393e7df10c7"
-games[9, promoId]="e68b39d2-4880-4a31-b3aa-0393e7df10c7"
+games[8, name]="Hide Ball"
+games[8, appToken]="4bf4966c-4d22-439b-8ff2-dc5ebca1a600"
+games[8, promoId]="4bf4966c-4d22-439b-8ff2-dc5ebca1a600"
 
-games[10, name]="Stone Age"
-games[10, appToken]="04ebd6de-69b7-43d1-9c4b-04a6ca3305af"
-games[10, promoId]="04ebd6de-69b7-43d1-9c4b-04a6ca3305af"
+games[9, name]="Zoopolis"
+games[9, appToken]="b2436c89-e0aa-4aed-8046-9b0515e1c46b"
+games[9, promoId]="b2436c89-e0aa-4aed-8046-9b0515e1c46b"
 
-games[11, name]="Bouncemasters"
-games[11, appToken]="bc72d3b9-8e91-4884-9c33-f72482f0db37"
-games[11, promoId]="bc72d3b9-8e91-4884-9c33-f72482f0db37"
+games[10, name]="Chain Cube 2048"
+games[10, appToken]="d1690a07-3780-4068-810f-9b5bbf2931b2"
+games[10, promoId]="b4170868-cef0-424f-8eb9-be0622e8e8e3"
 
-games[12, name]="Hide Ball"
-games[12, appToken]="4bf4966c-4d22-439b-8ff2-dc5ebca1a600"
-games[12, promoId]="4bf4966c-4d22-439b-8ff2-dc5ebca1a600"
+games[11, name]="Train Miner"
+games[11, appToken]="82647f43-3f87-402d-88dd-09a90025313f"
+games[11, promoId]="c4480ac7-e178-4973-8061-9ed5b2e17954"
+
+games[12, name]="Merge Away"
+games[12, appToken]="8d1cc2ad-e097-4b86-90ef-7a27e19fb833"
+games[12, promoId]="dc128d28-c45b-411c-98ff-ac7726fbaea4"
+
+
 
 # Proxys
 load_proxies() {
