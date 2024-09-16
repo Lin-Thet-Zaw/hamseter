@@ -93,7 +93,7 @@ while true; do
         -H "Content-Type: application/json" \
         -H "Authorization: $Authorization" \
         -d '{
-            "availableTaps": '"$Taps"',
+            "taps": '"$Taps"',
             "taps": 3,
             "timestamp": '"$(date +%s)"'
         }' > /dev/null
