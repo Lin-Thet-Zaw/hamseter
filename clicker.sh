@@ -107,7 +107,7 @@ while true; do
         -H "Authorization: $Authorization" \
         -d '{
             "taps": '"$Taps"',
-            "count": 3,
+            "taps": 3,
             "timestamp": '"$(date +%s)"'
         }' > /dev/null
 
