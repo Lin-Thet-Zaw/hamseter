@@ -9,22 +9,6 @@ cyan='\033[0;36m'
 blue='\033[0;34m'
 rest='\033[0m'
 
-# Predefined passcode
-passcode="1234"  # Change this to your desired passcode
-
-# Prompt for the passcode
-echo -en "${green}Enter Passcode to run the script: ${rest}"
-read -s entered_passcode
-echo ""
-
-# Check if the passcode matches
-if [ "$entered_passcode" != "$passcode" ]; then
-    echo -e "${red}Incorrect passcode. Exiting...${rest}"
-    exit 1
-fi
-
-echo -e "${green}Passcode accepted. Proceeding...${rest}"
-
 # If running in Termux, update and upgrade
 if [ -d "$HOME/.termux" ] && [ -z "$(command -v jq)" ]; then
     echo "Running update & upgrade ..."
