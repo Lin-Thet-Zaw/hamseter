@@ -68,7 +68,7 @@ capacity=${capacity:-5000}
 
 while true; do
     Taps=$(curl -s -X POST \
-        https://api.tapswap.club/api/player/submit_taps \
+        https://api.tapswap.club/api/account/challenge \
         -H "Content-Type: application/json" \
         -H "Authorization: $Authorization" \
         -d '{}' | jq -r '.playser.stat.taps')
@@ -77,7 +77,7 @@ while true; do
         echo "Taps are less than 30. Waiting to reach $capacity again..."
         while [ "$Taps" -lt $capacity ]; do
             Taps=$(curl -s -X POST \
-                https://api.tapswap.club/api/player/submit_taps \
+                https://api.tapswap.club/api/account/challenge \
                 -H "Content-Type: application/json" \
                 -H "Authorization: $Authorization" \
                 -d '{}' | jq -r '.player.stat.taps')
