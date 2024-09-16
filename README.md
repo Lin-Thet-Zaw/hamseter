@@ -1,10 +1,8 @@
 # Hamster-Auto-buy-BestCard & AutoClicker $ Get keys 🔑 
 
-[Tutorial on YouTube](https://youtu.be/bXND1sElZuc)
-
 ## Auto buy
 ```
-bash <(curl -fsSL https://raw.githubusercontent.com/Ptechgithub/Hamster-Auto-buy-BestCard/main/install.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/Lin-Thet-Zaw/hamseter/blob/master/install.sh)
 ```
 ## Get keys 🔑 and send to your telegram channel
 ```
@@ -13,15 +11,15 @@ bash <(curl -fsSL https://raw.githubusercontent.com/Lin-Thet-Zaw/hamseter/blob/m
 
 ## Daily cipher:
 ```
-bash <(curl -fsSL https://raw.githubusercontent.com/Ptechgithub/Hamster-Auto-buy-BestCard/main/daily_cipher.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/Lin-Thet-Zaw/hamseter/blob/master/daily_cipher.sh)
 ```
 ### More advanced Auto buy
 ```
-bash <(curl -fsSL https://raw.githubusercontent.com/Ptechgithub/Hamster-Auto-buy-BestCard/main/install_second.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/Lin-Thet-Zaw/hamseter/blob/master/install_second.sh)
 ```
 ### Auto Clicker
 ```
-bash <(curl -fsSL https://raw.githubusercontent.com/Ptechgithub/Hamster-Auto-buy-BestCard/main/clicker.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/Lin-Thet-Zaw/hamseter/blob/master/clicker.sh)
 ```
 ![29](https://raw.githubusercontent.com/Ptechgithub/configs/main/media/29.jpg)
 ---
@@ -38,7 +36,3 @@ How to Run hamster in Browser:
 
 ---
 - Get Authorization:
-
-![30](https://raw.githubusercontent.com/Ptechgithub/configs/main/media/30.jpg)
-
-[آموزش ویدیویی در YouTube](https://www.youtube.com/watch?v=bXND1sElZuc)
