@@ -46,37 +46,37 @@ PROXY_FILE="proxy.txt"
 # Games
 declare -A games
 
-games[1, name]="Twerk Race 3D"
-games[1, appToken]="61308365-9d16-4040-8bb0-2f4a4c69074c"
-games[1, promoId]="61308365-9d16-4040-8bb0-2f4a4c69074c"
+games[1, name]="Fluff Crusade"
+games[1, appToken]="112887b0-a8af-4eb2-ac63-d82df78283d9"
+games[1, promoId]="112887b0-a8af-4eb2-ac63-d82df78283d9"
 
-games[2, name]="Polysphere"
-games[2, appToken]="2aaf5aee-2cbc-47ec-8a3f-0962cc14bc71"
-games[2, promoId]="2aaf5aee-2cbc-47ec-8a3f-0962cc14bc71"
+games[2, name]="Hide Ball"
+games[2, appToken]="4bf4966c-4d22-439b-8ff2-dc5ebca1a600"
+games[2, promoId]="4bf4966c-4d22-439b-8ff2-dc5ebca1a600"
 
 games[3, name]="Mow and Trim"
 games[3, appToken]="ef319a80-949a-492e-8ee0-424fb5fc20a6"
 games[3, promoId]="ef319a80-949a-492e-8ee0-424fb5fc20a6"
 
-games[4, name]="Fluff Crusade"
-games[4, appToken]="112887b0-a8af-4eb2-ac63-d82df78283d9"
-games[4, promoId]="112887b0-a8af-4eb2-ac63-d82df78283d9"
+games[4, name]="Bouncemasters"
+games[4, appToken]="bc72d3b9-8e91-4884-9c33-f72482f0db37"
+games[4, promoId]="bc72d3b9-8e91-4884-9c33-f72482f0db37"
 
-games[5, name]="Tile Trio"
-games[5, appToken]="e68b39d2-4880-4a31-b3aa-0393e7df10c7"
-games[5, promoId]="e68b39d2-4880-4a31-b3aa-0393e7df10c7"
+games[5, name]="Twerk Race 3D"
+games[5, appToken]="61308365-9d16-4040-8bb0-2f4a4c69074c"
+games[5, promoId]="61308365-9d16-4040-8bb0-2f4a4c69074c"
 
-games[6, name]="Stone Age"
-games[6, appToken]="04ebd6de-69b7-43d1-9c4b-04a6ca3305af"
-games[6, promoId]="04ebd6de-69b7-43d1-9c4b-04a6ca3305af"
+games[6, name]="Polysphere"
+games[6, appToken]="2aaf5aee-2cbc-47ec-8a3f-0962cc14bc71"
+games[6, promoId]="2aaf5aee-2cbc-47ec-8a3f-0962cc14bc71"
 
-games[7, name]="Bouncemasters"
-games[7, appToken]="bc72d3b9-8e91-4884-9c33-f72482f0db37"
-games[7, promoId]="bc72d3b9-8e91-4884-9c33-f72482f0db37"
+games[7, name]="Tile Trio"
+games[7, appToken]="e68b39d2-4880-4a31-b3aa-0393e7df10c7"
+games[7, promoId]="e68b39d2-4880-4a31-b3aa-0393e7df10c7"
 
-games[8, name]="Hide Ball"
-games[8, appToken]="4bf4966c-4d22-439b-8ff2-dc5ebca1a600"
-games[8, promoId]="4bf4966c-4d22-439b-8ff2-dc5ebca1a600"
+games[8, name]="Stone Age"
+games[8, appToken]="04ebd6de-69b7-43d1-9c4b-04a6ca3305af"
+games[8, promoId]="04ebd6de-69b7-43d1-9c4b-04a6ca3305af"
 
 games[9, name]="Zoopolis"
 games[9, appToken]="b2436c89-e0aa-4aed-8046-9b0515e1c46b"
