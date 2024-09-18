@@ -30,13 +30,11 @@ fi
 clear
 echo -e "${purple}=======${yellow}Hamster Combat Game Keys${purple}=======${rest}"
 echo ""
-echo -en "${purple}[Optional] ${green}Enter Your telegram Bot token: ${rest}"
-read -r TELEGRAM_BOT_TOKEN
 echo -e "${purple}============================${rest}"
-echo -en "${purple}[Optional] ${green}Enter Your Telegram Channel ID [example: ${yellow}@P_Tech2024${green}]: ${rest}"
+echo -en "${green}Telegram [Telegram: ${yellow}@P_Tech2024${green}]: ${rest}"
 read -r TELEGRAM_CHANNEL_ID
 echo -e "${purple}============================${rest}"
-echo -e "${green}generating ... Keys will be saved in [${yellow}my_keys.txt${green}]..${rest}"
+echo -e "${green}generating ... Keys will be..${rest}"
 
 EVENTS_DELAY=20
 PROXY_FILE="proxy.txt"
