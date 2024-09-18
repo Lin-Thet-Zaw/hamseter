@@ -31,7 +31,7 @@ clear
 echo -e "${purple}=======${yellow}Hamster Combat Game Keys${purple}=======${rest}"
 echo ""
 echo -e "${purple}============================${rest}"
-echo -en "${green}Telegram [Telegram: ${yellow}@P_Tech2024${green}]: ${rest}"
+echo -en "${green}Telegram [Telegram: ${yellow}@lernthertzaw${green}]: ${rest}"
 read -r TELEGRAM_CHANNEL_ID
 echo -e "${purple}============================${rest}"
 echo -e "${green}generating ... Keys will be..${rest}"
